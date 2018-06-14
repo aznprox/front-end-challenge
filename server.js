@@ -17,7 +17,7 @@ const port = process.env.PORT || 1337;
 
 var payload = fs.readFileSync('./data_set.json', 'utf8');
 
-app.get('/api/yolo', (req, res) => {
+app.get('/api/data', (req, res) => {
   res.send(payload);
 });
 
